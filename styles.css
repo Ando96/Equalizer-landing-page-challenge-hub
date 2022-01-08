@@ -1,0 +1,12 @@
+:root {
+    --cyan: hsl(177, 68%, 64%);
+    --dark-orange: hsl(12, 94%, 65%);
+    --orange: hsl(33, 100%, 70%);
+    --white: hsl(20, 33%, 98%);
+    --black: hsl(244, 23%, 12%);
+
+    --regular: 400;
+    --bold: 700;
+
+    --IBM: 'IBM Plex Sans', sans-serif;
+}
