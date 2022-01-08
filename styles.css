@@ -10,3 +10,22 @@
 
     --IBM: 'IBM Plex Sans', sans-serif;
 }
+
+h1{
+  font-family: var(--IBM);
+  font-weight: var(--bold);
+  font-size: 88px;
+  word-spacing: -1px;
+  line-height: 88px;
+}
+
+h2{
+  font-family: var(--IBM);
+  font-weight: var(--bold);
+  font-size: 40px;
+  line-height: 52px;
+}
+
+p{
+  font-family: var(--IBM);
+}
