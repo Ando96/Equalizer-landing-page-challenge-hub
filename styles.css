@@ -11,6 +11,16 @@
     --IBM: 'IBM Plex Sans', sans-serif;
 }
 
+body {
+    background: var(--white) url(assets/bg-main-desktop.png) no-repeat 0 top;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+header {
+
+}
+
 h1{
   font-family: var(--IBM);
   font-weight: var(--bold);
@@ -28,4 +38,44 @@ h2{
 
 p{
   font-family: var(--IBM);
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.desktop-pattern{
+position: absolute;
+right: 0px;
+bottom: 10px;
+top: -50px;
+}
+
+.logo{
+  max-width: 150px;
+  margin-bottom: 6rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 4rem;
+  width: 80.5%;
+  margin: auto;
+}
+
+.top-text{
+  width: 80%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.middle{
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-top: 100px;
+  height: 500px;
+  background-color: var(--black);
+  width: 80.5%;
 }
