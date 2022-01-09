@@ -18,7 +18,7 @@ body {
 }
 
 header {
-
+    display: flex;
 }
 
 h1{
@@ -44,6 +44,7 @@ p{
 
 .desktop-pattern{
 position: absolute;
+width: 300px;
 right: 0px;
 bottom: 10px;
 top: -50px;
@@ -68,14 +69,81 @@ top: -50px;
   width: 80%;
   margin-top: 30px;
   text-align: left;
+  align-self: flex-start;
+}
+
+.top-title{
+  max-width: 80%;
 }
 
 .middle{
   justify-content: center;
   align-content: center;
   display: flex;
-  margin-top: 100px;
-  height: 500px;
+  margin-top: 250px;
+}
+
+.box{
+  display: flex;
+  height: 600px;
   background-color: var(--black);
   width: 80.5%;
+  position: relative;
+}
+
+.phone{
+  height:100%;
+  width: 300px;
+  align-items: flex-start;
+  margin-left: 115px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150px;
+}
+
+.card-img{
+  height: 75%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: relative;
+  left: 200px;
+}
+
+.card{
+  background-color: var(--dark-orange);
+  color: var(--white);
+  width: 450px;
+  height: 550px;
+  align-self: flex-end;
+  padding: 3.7rem 5rem;
+}
+
+.card-text{
+  text-align: left;
+}
+
+.button {
+  font-family: var(--IBM);
+  padding: 14px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 16px;
+  width: 100%;
+  font-weight: var(--bold)
+}
+
+.apple{
+  background-color: var(--black);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.android{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.icon{
+  display: inline;
+  margin-right: 10px;
 }
