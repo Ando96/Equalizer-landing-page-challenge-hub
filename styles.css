@@ -4,15 +4,14 @@
     --orange: hsl(33, 100%, 70%);
     --white: hsl(20, 33%, 98%);
     --black: hsl(244, 23%, 12%);
-
     --regular: 400;
     --bold: 700;
-
     --IBM: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-    background: var(--white) url(assets/bg-main-desktop.png) no-repeat 0 top;
+    background: var(--white) url(assets/bg-main-desktop.png) 0 top;
+    background-position: top -175px left -175px;
     background-size: contain;
     min-height: 100vh;
     max-width: 90%;
@@ -47,8 +46,9 @@ p{
 footer{
   margin-top: 300px;
   display: flex;
-  align-content: center;
   justify-content: center;
+  align-content: center;
+
 }
 
 .desktop-pattern{
@@ -62,6 +62,7 @@ top: -50px;
 .logo{
   max-width: 150px;
   margin-bottom: 6rem;
+  align-self: flex-start;
 }
 
 .container{
@@ -94,7 +95,7 @@ top: -50px;
 
 .box{
   background: url(assets/bg-pattern-2.svg) no-repeat;
-  background-position: center left 300px;
+  background-position: top -50px left 300px;
   display: flex;
   height: 600px;
   background-color: var(--black);
@@ -105,7 +106,7 @@ top: -50px;
 
 .phone{
   height:100%;
-  width: 350px;
+  width: 300px;
   align-items: flex-start;
   margin-left: 115px;
   position: absolute;
@@ -124,17 +125,35 @@ top: -50px;
   background-color: var(--dark-orange);
   color: var(--white);
   width: 450px;
-  height: 550px;
+  height: 600px;
   align-self: flex-end;
-  padding: 3.7rem 5rem;
+  padding: 3.7rem 3.8rem;
   position: relative;
-  left: 500px;
-  top: 200px;
+  left: 550px;
+  top: 75px;
   border-radius: 15px;
+}
+
+.card-title{
+  margin-bottom: 15px;
+}
+
+.card-cost{
+  margin-bottom: 40px;
+  font-size: 65px;
 }
 
 .card-text{
   text-align: left;
+  font-family: var(--IBM);
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+.month{
+  font-size: 20px;
+  font-weight: var(--regular);
 }
 
 .button {
@@ -144,7 +163,7 @@ top: -50px;
   text-decoration: none;
   border-radius: 16px;
   width: 100%;
-  font-weight: var(--bold)
+  font-weight: var(--bold);
 }
 
 .apple{
@@ -153,12 +172,59 @@ top: -50px;
   margin-bottom: 10px;
 }
 
+.apple:hover{
+  background-color: var(--cyan);
+}
+
 .android{
   background-color: var(--white);
   color: var(--black);
 }
 
+.android:hover{
+  background-color: var(--orange);
+}
+
 .icon{
   display: inline;
   margin-right: 10px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 4rem;
+  width: 80.5%;
+  margin: auto;
+  gap: 100px;
+}
+
+.footer-text{
+    font-family: var(--IBM);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: var(--regular);
+    width: 40%;
+}
+
+.email{
+   font-weight: var(--bold);
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  height: 20px;
+}
+
+.socials-img{
+  justify-content: space-between;
+}
+
+.social-icon:hover{
+   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(80%);
 }
