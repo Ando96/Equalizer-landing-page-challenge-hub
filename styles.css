@@ -1,28 +1,31 @@
 :root {
-    --cyan: hsl(177, 68%, 64%);
-    --dark-orange: hsl(12, 94%, 65%);
-    --orange: hsl(33, 100%, 70%);
-    --white: hsl(20, 33%, 98%);
-    --black: hsl(244, 23%, 12%);
-    --regular: 400;
-    --bold: 700;
-    --IBM: 'IBM Plex Sans', sans-serif;
+  --cyan: hsl(177, 68%, 64%);
+  --dark-orange: hsl(12, 94%, 65%);
+  --orange: hsl(33, 100%, 70%);
+  --white: hsl(20, 33%, 98%);
+  --black: hsl(244, 23%, 12%);
+  --regular: 400;
+  --bold: 700;
+  --IBM: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-    background: var(--white) url(assets/bg-main-desktop.png) 0 top;
-    background-position: top -175px left -175px;
-    background-size: contain;
-    min-height: 100vh;
-    max-width: 90%;
-    margin: auto;
+  background: var(--white) url(assets/bg-main-desktop.png) 0 top;
+  background-position: top -175px left -175px;
+  background-size: contain;
+  /* min-height: 100vh; */
+  /* max-width: 90%; */
+  /* margin: auto; */
 }
 
 header {
-    display: flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-h1{
+h1 {
   font-family: var(--IBM);
   font-weight: var(--bold);
   font-size: 88px;
@@ -30,90 +33,92 @@ h1{
   line-height: 88px;
 }
 
-h2{
+h2 {
   font-family: var(--IBM);
   font-weight: var(--bold);
   font-size: 40px;
   line-height: 52px;
 }
 
-p{
+p {
   font-family: var(--IBM);
   font-size: 20px;
   line-height: 34px;
 }
 
-footer{
-  margin-top: 300px;
+footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-content: center;
-
 }
 
-.desktop-pattern{
-position: absolute;
-width: 300px;
-right: 0px;
-bottom: 10px;
-top: -50px;
+.desktop-pattern {
+  position: absolute;
+  width: 312px;
+  height: 468px;
+  right: 0px;
+  bottom: 10px;
+  top: -50px;
 }
 
-.logo{
-  max-width: 150px;
+.logo {
+  width: 146px;
+  height: 32px;
   margin-bottom: 6rem;
   align-self: flex-start;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   padding-top: 4rem;
-  width: 80.5%;
+  /* width: 80.5%; */
   margin: auto;
 }
 
-.top-text{
-  width: 80%;
+.top-text {
+  width: 825px;
   margin-top: 30px;
   text-align: left;
   align-self: flex-start;
 }
 
-.top-title{
-  max-width: 80%;
+.top-title {
+  max-width: 1015px;
 }
 
-.middle{
+.middle {
   justify-content: center;
   align-content: center;
   display: flex;
   margin-top: 250px;
 }
 
-.box{
+.box {
   background: url(assets/bg-pattern-2.svg) no-repeat;
   background-position: top -50px left 300px;
   display: flex;
   height: 600px;
   background-color: var(--black);
-  width: 80.5%;
+  width: 1110px;
   position: relative;
   border-radius: 15px;
 }
 
-.phone{
-  height:100%;
-  width: 300px;
+.phone {
+  height: 642px;
+  width: 312px;
   align-items: flex-start;
   margin-left: 115px;
   position: absolute;
   bottom: 150px;
 }
 
-.card-img{
+.card-img {
   height: 75%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -121,11 +126,11 @@ top: -50px;
   left: 200px;
 }
 
-.card{
+.card {
   background-color: var(--dark-orange);
   color: var(--white);
-  width: 450px;
-  height: 600px;
+  width: 446px;
+  height: 625px;
   align-self: flex-end;
   padding: 3.7rem 3.8rem;
   position: relative;
@@ -134,16 +139,16 @@ top: -50px;
   border-radius: 15px;
 }
 
-.card-title{
+.card-title {
   margin-bottom: 15px;
 }
 
-.card-cost{
+.card-cost {
   margin-bottom: 40px;
   font-size: 65px;
 }
 
-.card-text{
+.card-text {
   text-align: left;
   font-family: var(--IBM);
   font-size: 20px;
@@ -151,7 +156,7 @@ top: -50px;
   margin-bottom: 40px;
 }
 
-.month{
+.month {
   font-size: 20px;
   font-weight: var(--regular);
 }
@@ -166,54 +171,55 @@ top: -50px;
   font-weight: var(--bold);
 }
 
-.apple{
+.apple {
   background-color: var(--black);
   color: var(--white);
   margin-bottom: 10px;
 }
 
-.apple:hover{
+.apple:hover {
   background-color: var(--cyan);
 }
 
-.android{
+.android {
   background-color: var(--white);
   color: var(--black);
 }
 
-.android:hover{
+.android:hover {
   background-color: var(--orange);
 }
 
-.icon{
+.icon {
   display: inline;
   margin-right: 10px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   padding-top: 4rem;
-  width: 80.5%;
-  margin: auto;
-  gap: 100px;
+  width: 1110px;
+  height: 79px;
+  /* margin: auto; */
+  /* gap: 100px; */
 }
 
-.footer-text{
-    font-family: var(--IBM);
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: var(--regular);
-    width: 40%;
+.footer-text {
+  width: 336px;
+  height: 79px;
+  font-family: var(--IBM);
+  font-size: 16px;
+  line-height: 26px;
 }
 
-.email{
-   font-weight: var(--bold);
+.email {
+  font-weight: var(--bold);
 }
 
-.socials{
+.socials {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -221,43 +227,31 @@ top: -50px;
   height: 20px;
 }
 
-.socials-img{
+.socials-img {
   justify-content: space-between;
 }
 
-.social-icon:hover{
-   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(80%);
+.social-icon:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(80%);
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .desktop-pattern {
+    display: none;
+  }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
 
-@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
 
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
 
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
-
-
-// X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
+} */
