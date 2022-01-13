@@ -23,6 +23,7 @@ header {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
+  width: 1110px;
 }
 
 h1 {
@@ -76,7 +77,8 @@ footer {
   align-content: center;
   padding-top: 4rem;
   /* width: 80.5%; */
-  margin: auto;
+  margin: 0 auto;
+  width: 1110px;
 }
 
 .top-text {
