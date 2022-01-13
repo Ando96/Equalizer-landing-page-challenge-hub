@@ -13,7 +13,7 @@ body {
   background: var(--white) url(assets/bg-main-desktop.png) 0 top;
   background-position: top -175px left -175px;
   background-size: contain;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* max-width: 90%; */
   /* margin: auto; */
 }
@@ -47,8 +47,8 @@ p {
 }
 
 footer {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -67,7 +67,6 @@ footer {
   width: 146px;
   height: 32px;
   margin-bottom: 6rem;
-  align-self: flex-start;
 }
 
 .container {
@@ -227,9 +226,9 @@ footer {
   height: 20px;
 }
 
-.socials-img {
+/* .socials-img {
   justify-content: space-between;
-}
+} */
 
 .social-icon:hover {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(80%);
@@ -240,18 +239,112 @@ footer {
   .desktop-pattern {
     display: none;
   }
+
+  header{
+    margin-top: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+  }
+
+  footer{
+    margin-bottom: 0px;
+  }
+
+  .top-title{
+    width: 327px;
+    height: 144px;
+  }
+
+  .top-text{
+    width: 327px;
+    height: 156px;
+  }
+
+  .container{
+    max-width: 100%;
+  }
+
+  .box{
+    width: 100%;
+  }
+
+  .card{
+    display: none;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-
-} */
+@media only screen and (max-width : 768px) {
+  header{
+    margin-top: 5rem;
+    padding-right: 150px;
+  }
+  footer{
+      width: 696px;
+      height: 143px;
+      margin: auto;
+      margin-top: 150px;
+      margin-bottom: 50px;
+  }
+  .footer-text{
+    width: 366px;
+    height: 79px;
+  }
+  .logo{
+    margin-bottom: 2rem;
+  }
+  .desktop-pattern{
+    width: 266px;
+    height: 400px;
+    right: -50px;
+  }
+  .container{
+    width: 520px;
+    height: 332px;
+  }
+  .top-title{
+    font-size: 60px;
+    line-height: 1;
+    width: 520px;
+    height: 192px;
+  }
+  .top-text{
+    font-size: 18px;
+    line-height: 1.5;
+    width: 514px;
+    height: 112px;
+  }
+  .phone{
+    width: 270px;
+    height: 556px;
+  }
+  .card{
+    padding: 3rem;
+    width: 399px;
+    height: 546px;
+    left: 280px;
+    top: 125px;
+  }
+  .button{
+    width: 296px;
+    height: 61px;
+  }
+  .card-title{
+    width: 302px;
+    height: 40px;
+  }
+  .card-cost{
+    width: 165px;
+    height: 52px;
+    margin-bottom: 10px;
+  }
+  .card-text{
+    width: 302px;
+    height: 140px;
+    margin-bottom: 75px;
+  }
+  .box{
+    width: 696px;
+    height: 600px;
+  }
+}
